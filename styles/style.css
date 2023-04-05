@@ -493,7 +493,7 @@ h6 {
 
 .address {
     margin: 100px 0;
-    background: url(/images/Map.png) center no-repeat;
+    background: url(images/Map.png) center no-repeat;
     background-size: contain;
     min-height: 600px;
     padding-top: 50px;
