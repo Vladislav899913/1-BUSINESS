@@ -19,11 +19,16 @@
         <header class="header">
             <div class="container">
                 <div class="header_inner">
-                    <a href="#">
+                    <div class="nav_burger_icon" id="nav_burger_icon">
+                        <span class="icon_line"></span>
+                        <span class="icon_line"></span>
+                        <span class="icon_line"></span>
+                    </div>
+                    <a href="#intro" id="logo">
                         <img src="images/Logo.png" alt="" />
                     </a>
-                    <nav class="nav">
-                        <a class="nav_link active" href="#">Home</a>
+                    <nav class="nav" id="nav_links">
+                        <a class="nav_link active" href="#intro">Home</a>
                         <a class="nav_link" href="#">Service</a>
                         <a class="nav_link" href="#">About us</a>
                         <a class="nav_link" href="#">Pricing table</a>
@@ -33,9 +38,10 @@
                     </nav>
                 </div>
             </div>
+            <div class="nav_burger" id="nav_burger"></div>
         </header>
         <main>
-            <div class="intro">
+            <div class="intro" id="intro">
                 <div class="container">
                     <div class="title">
                         <h2 class="title_title">
@@ -241,7 +247,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container_bgc">
+            <div class="container_bgc">
                 <div class="price">
                     <div class="container">
                         <div class="title title_dark">
@@ -316,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="works">
                 <div class="container">
                     <div class="title title_dark">
@@ -403,7 +409,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="#footer">
                         <button class="button works_button">
                             Get start now
                         </button>
@@ -542,7 +548,7 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="title title_dark">
                     <h2 class="title_title">Newsletter</h2>
@@ -629,5 +635,6 @@
                 </p>
             </div>
         </footer>
+        <script src="/scripts/JavaScript.js"></script>
     </body>
 </html>
