@@ -13,7 +13,7 @@
         ></script>
         <title>Business</title>
         <link rel="stylesheet" href="styles/style.css" />
-        <link rel="icon" href="images/favicon.png" />
+        <link rel="icon" href="images/common/favicon.png" />
     </head>
     <body>
         <header class="header">
@@ -25,7 +25,7 @@
                         <span class="icon_line"></span>
                     </div>
                     <a href="#intro" id="logo">
-                        <img src="images/Logo.png" alt="" />
+                        <img src="images/common/logo.png" alt="Логотип" />
                     </a>
                     <nav class="nav" id="nav_links">
                         <a class="nav_link active" href="#intro">Home</a>
@@ -78,8 +78,8 @@
                     <div class="slider">
                         <img
                             class="slider_laptop"
-                            src="images/Laptop.png"
-                            alt=""
+                            src="images/intro/laptop.png"
+                            alt="Картинка ноутбука"
                         />
                         <div class="slider_inner">
                             <div class="slider_item active"></div>
@@ -101,8 +101,8 @@
                         <div class="services_item">
                             <img
                                 class="services_img"
-                                src="images/Services_logos/1.png"
-                                alt=""
+                                src="images/services/icon_1.png"
+                                alt="Иконка_1"
                             />
                             <div>
                                 <h4 class="services_title">
@@ -120,8 +120,8 @@
                         <div class="services_item">
                             <img
                                 class="services_img"
-                                src="images/Services_logos/2.png"
-                                alt=""
+                                src="images/services/icon_2.png"
+                                alt="Иконка_2"
                             />
                             <div>
                                 <h4 class="services_title">
@@ -139,8 +139,8 @@
                         <div class="services_item">
                             <img
                                 class="services_img"
-                                src="images/Services_logos/3.png"
-                                alt=""
+                                src="images/services/icon_3.png"
+                                alt="Иконка_3"
                             />
                             <div>
                                 <h4 class="services_title">
@@ -158,8 +158,8 @@
                         <div class="services_item">
                             <img
                                 class="services_img"
-                                src="images/Services_logos/4.png"
-                                alt=""
+                                src="images/services/icon_4.png"
+                                alt="Иконка_4"
                             />
                             <div>
                                 <h4 class="services_title">
@@ -177,8 +177,8 @@
                         <div class="services_item">
                             <img
                                 class="services_img"
-                                src="images/Services_logos/5.png"
-                                alt=""
+                                src="images/services/icon_5.png"
+                                alt="Иконка_5"
                             />
                             <div>
                                 <h4 class="services_title">Friendly Code</h4>
@@ -193,8 +193,8 @@
                         <div class="services_item">
                             <img
                                 class="services_img"
-                                src="images/Services_logos/6.png"
-                                alt=""
+                                src="images/services/icon_6.png"
+                                alt="Иконка_6"
                             />
                             <div>
                                 <h4 class="services_title">
@@ -217,7 +217,7 @@
                     <div class="about_item">
                         <img
                             class="about_img"
-                            src="images/About us.png"
+                            src="images/about/photo.png"
                             alt=""
                         />
                     </div>
@@ -258,66 +258,128 @@
                             </h3>
                         </div>
                         <div class="price_inner">
-                            <div class="price_item">
-                                <h2 class="price_title">Basic plan</h2>
-                                <h3 class="price_cost">
-                                    <span class="price_dollar">$</span>22
-                                </h3>
-                                <h4 class="price_subtitle">Per month</h4>
-                                <div class="price_text">
-                                    <p class="price_text_item">1 account</p>
-                                    <p class="price_text_item">
-                                        8 hour support
-                                    </p>
-                                    <p class="price_text_item">
-                                        Custom cloud services
-                                    </p>
+                            <div class="price_inner_slider">
+                                <div class="price_slider_slider">
+                                    <a
+                                        class="price_slider_previous"
+                                        onclick="plusSlides(-1)"
+                                    >
+                                        <img
+                                            draggable="false"
+                                            src="images/price/icon_previous.png"
+                                            alt="Слайдер влево"
+                                        />
+                                    </a>
+                                    <div
+                                        class="price_slider_item price_item_animation"
+                                    >
+                                        <h2 class="price_item_title">Basic</h2>
+                                        <h3 class="price_item_cost">
+                                            <span class="price_item_dollar"
+                                                >$</span
+                                            >22
+                                        </h3>
+                                        <h4 class="price_item_subtitle">
+                                            Per month
+                                        </h4>
+                                        <div class="price_item_text">
+                                            <p class="price_text_item">
+                                                1 account
+                                            </p>
+                                            <p class="price_text_item">
+                                                8 hour support
+                                            </p>
+                                            <p class="price_text_item">
+                                                Custom cloud services
+                                            </p>
+                                        </div>
+                                        <a href="#">
+                                            <button class="button price_button">
+                                                Get started
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="price_slider_item">
+                                        <h2 class="price_item_title">
+                                            Premium
+                                        </h2>
+                                        <h3 class="price_item_cost">
+                                            <span class="price_item_dollar"
+                                                >$</span
+                                            >42
+                                        </h3>
+                                        <h4 class="price_item_subtitle">
+                                            Per month
+                                        </h4>
+                                        <div class="price_item_text">
+                                            <p class="price_text_item">
+                                                2 accounts
+                                            </p>
+                                            <p class="price_text_item">
+                                                100mb storage
+                                            </p>
+                                            <p class="price_text_item">
+                                                Custom cloud services
+                                            </p>
+                                        </div>
+                                        <a href="#">
+                                            <button class="button price_button">
+                                                Get started
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div class="price_slider_item">
+                                        <h2 class="price_item_title">Gold</h2>
+                                        <h3 class="price_item_cost">
+                                            <span class="price_item_dollar"
+                                                >$</span
+                                            >62
+                                        </h3>
+                                        <h4 class="price_item_subtitle">
+                                            Per month
+                                        </h4>
+                                        <div class="price_item_text">
+                                            <p class="price_text_item">
+                                                8 accounts
+                                            </p>
+                                            <p class="price_text_item">
+                                                24 hour support
+                                            </p>
+                                            <p class="price_text_item">
+                                                Custom cloud services
+                                            </p>
+                                        </div>
+                                        <a href="#">
+                                            <button class="button price_button">
+                                                Get started
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <a
+                                        class="price_slider_next"
+                                        onclick="plusSlides(1)"
+                                    >
+                                        <img
+                                            draggable="false"
+                                            src="images/price/icon_next.png"
+                                            alt="Слайдер вправо"
+                                        />
+                                    </a>
                                 </div>
-                                <a href="#">
-                                    <button class="button price_button">
-                                        Get started
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="price_item">
-                                <h2 class="price_title">Premium plan</h2>
-                                <h3 class="price_cost">
-                                    <span class="price_dollar">$</span>42
-                                </h3>
-                                <h4 class="price_subtitle">Per month</h4>
-                                <div class="price_text">
-                                    <p class="price_text_item">2 accounts</p>
-                                    <p class="price_text_item">100mb storage</p>
-                                    <p class="price_text_item">
-                                        Custom cloud services
-                                    </p>
+                                <div class="price_slider_dots">
+                                    <span
+                                        class="price_slider_dot"
+                                        onclick="currentSlide(1)"
+                                    ></span>
+                                    <span
+                                        class="price_slider_dot"
+                                        onclick="currentSlide(2)"
+                                    ></span>
+                                    <span
+                                        class="price_slider_dot"
+                                        onclick="currentSlide(3)"
+                                    ></span>
                                 </div>
-                                <a href="#">
-                                    <button class="button price_button">
-                                        Get started
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="price_item">
-                                <h2 class="price_title">Gold plan</h2>
-                                <h3 class="price_cost">
-                                    <span class="price_dollar">$</span>62
-                                </h3>
-                                <h4 class="price_subtitle">Per month</h4>
-                                <div class="price_text">
-                                    <p class="price_text_item">8 accounts</p>
-                                    <p class="price_text_item">
-                                        24 hour support
-                                    </p>
-                                    <p class="price_text_item">
-                                        Custom cloud services
-                                    </p>
-                                </div>
-                                <a href="#">
-                                    <button class="button price_button">
-                                        Get started
-                                    </button>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -337,14 +399,14 @@
                                 <img
                                     class="works_arrow_1"
                                     draggable="false"
-                                    src="images/Works_logos/Arrows/arrow.jpg"
-                                    alt=""
+                                    src="images/works/arrow.jpg"
+                                    alt="Картинка стрелки"
                                 />
 
                                 <img
                                     class="works_logo"
-                                    src="images/Works_logos/1.png"
-                                    alt=""
+                                    src="images/works/icon_1.png"
+                                    alt="Иконка_1"
                                 />
                                 <h3 class="works_title">Step 1</h3>
                                 <p class="works_text">
@@ -357,14 +419,14 @@
                                 <img
                                     class="works_arrow_reverse"
                                     draggable="false"
-                                    src="images/Works_logos/Arrows/arrow_reverse.jpg"
-                                    alt=""
+                                    src="images/works/arrow_reverse.jpg"
+                                    alt="Картинка перевёрнутой стрелки"
                                 />
 
                                 <img
                                     class="works_logo"
-                                    src="images/Works_logos/2.png"
-                                    alt=""
+                                    src="images/works/icon_2.png"
+                                    alt="Иконка_2"
                                 />
                                 <h3 class="works_title">Step 2</h3>
                                 <p class="works_text">
@@ -379,13 +441,13 @@
                                 <img
                                     class="works_arrow_2"
                                     draggable="false"
-                                    src="images/Works_logos/Arrows/arrow.jpg"
-                                    alt=""
+                                    src="images/works/arrow.jpg"
+                                    alt="Картинка стрелки"
                                 />
                                 <img
                                     class="works_logo"
-                                    src="images/Works_logos/3.png"
-                                    alt=""
+                                    src="images/works/icon_3.png"
+                                    alt="Иконка_3"
                                 />
                                 <h3 class="works_title">Step 3</h3>
                                 <p class="works_text">
@@ -397,8 +459,8 @@
                             <div class="works_item">
                                 <img
                                     class="works_logo"
-                                    src="images/Works_logos/4.png"
-                                    alt=""
+                                    src="images/works/icon_4.png"
+                                    alt="Иконка_4"
                                 />
                                 <h3 class="works_title">Step 4</h3>
                                 <p class="works_text">
@@ -430,8 +492,8 @@
                             <div class="clients_item_inner">
                                 <img
                                     class="clients_img"
-                                    src="images/Clients_photo/1.png"
-                                    alt=""
+                                    src="images/clients/photo_1.png"
+                                    alt="Фото клиента_1"
                                 />
                                 <div>
                                     <p class="clients_review">
@@ -459,8 +521,8 @@
                             <div class="clients_item_inner">
                                 <img
                                     class="clients_img"
-                                    src="images/Clients_photo/2.png"
-                                    alt=""
+                                    src="images/clients/photo_2.png"
+                                    alt="Фото клиента_2"
                                 />
                                 <div>
                                     <p class="clients_review">
@@ -488,8 +550,8 @@
                             <div class="clients_item_inner">
                                 <img
                                     class="clients_img"
-                                    src="images/Clients_photo/3.png"
-                                    alt=""
+                                    src="images/clients/photo_3.png"
+                                    alt="Фото клиента_3"
                                 />
                                 <div>
                                     <div>
@@ -519,8 +581,8 @@
                             <div class="clients_item_inner">
                                 <img
                                     class="clients_img"
-                                    src="images/Clients_photo/4.png"
-                                    alt=""
+                                    src="images/clients/photo_4.png"
+                                    alt="Фото клиента_4"
                                 />
                                 <div>
                                     <p class="clients_review">
@@ -592,14 +654,14 @@
                         <img
                             draggable="false"
                             class="after_circle"
-                            src="images/After_circle.jpg"
+                            src="images/footer/after_circle.jpg"
                             alt=""
                         />
                         <img
                             draggable="false"
                             class="address_logo"
-                            src="images/Logo.png"
-                            alt=""
+                            src="images/common/logo.png"
+                            alt="Логотип"
                         />
                     </div>
                     <nav class="nav footer_nav">

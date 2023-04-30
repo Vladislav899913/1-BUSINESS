@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -46,15 +55,9 @@ h6 {
     background: #6c6c6c;
 }
 
-.container {
-    max-width: 1530px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 /* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -111,7 +114,7 @@ h6 {
 
 /* INTRO */
 .intro {
-    height: 480px;
+    height: 500px;
     background-color: #709dca;
     padding-top: 110px;
     color: #fff;
@@ -137,7 +140,7 @@ h6 {
 }
 
 .input_item {
-    width: 25%;
+    width: 26%;
     height: 45px;
     padding: 0;
     padding-left: 15px;
@@ -191,8 +194,8 @@ h6 {
 }
 
 .slider_item {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border: 3px solid #dedfe0;
     border-radius: 50%;
     margin: 0 5px;
@@ -208,7 +211,7 @@ h6 {
 }
 
 .services {
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .services_inner {
@@ -313,47 +316,109 @@ h6 {
 }
 
 .price_inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 83px;
 }
 
-.price_item {
-    width: 32%;
-    padding-top: 55px;
-    height: 420px;
+.price_slider_slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    min-width: 480px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.price_slider_previous,
+.price_slider_next {
+    padding: 10px;
+    transition: 0.5s ease;
+    height: 65px;
+    width: 65px;
+    border-radius: 10px;
+}
+
+.price_slider_previous > img,
+.price_slider_next > img {
+    width: 100%;
+}
+
+.price_slider_previous:hover,
+.price_slider_next:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.price_slider_dots {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.price_slider_dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    background-color: #cc9535;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.price_dot_active,
+.price_slider_dot:hover {
+    background-color: #ffbb42;
+}
+
+.price_slider_item {
+    width: 60%;
+    padding: 50px 0;
     background-color: #fff;
     text-align: center;
     transition: 0.2s linear;
     color: #818b95;
     text-transform: uppercase;
+    border-radius: 10px;
+    animation: animation 1s linear;
 }
 
-.price_title {
+@keyframes animation {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.price_item_title {
     margin-bottom: 15px;
     font-size: 25px;
     font-weight: 300;
 }
 
-.price_cost {
+.price_item_cost {
     color: #ffbb42;
     font-size: 60px;
     font-weight: 700;
 }
 
-.price_dollar {
+.price_item_dollar {
     font-size: 35px;
     vertical-align: 20px;
     font-weight: 500;
 }
 
-.price_subtitle {
+.price_item_subtitle {
     font-weight: 300;
     margin-bottom: 33px;
 }
 
-.price_text {
+.price_item_text {
     width: 90%;
     margin: 0 auto;
 }
@@ -374,16 +439,16 @@ h6 {
     transition: 0.2s linear;
 }
 
-.price_item:hover {
+.price_slider_item:hover {
     background-color: #709dca;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.price_item:hover .price_title,
-.price_item:hover .price_dollar,
-.price_item:hover .price_cost,
-.price_item:hover .price_subtitle,
-.price_item:hover .price_text_item {
+.price_slider_item:hover .price_item_title,
+.price_slider_item:hover .price_item_dollar,
+.price_slider_item:hover .price_item_cost,
+.price_slider_item:hover .price_item_subtitle,
+.price_slider_item:hover .price_text_item {
     color: #fff;
 }
 
@@ -429,7 +494,7 @@ h6 {
 
 .works_logo {
     height: 63px;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .works_title {
@@ -524,7 +589,6 @@ h6 {
 .input_item_footer {
     width: 40%;
     margin-right: 10px;
-    height: 43px;
     border: 1px solid #cbcbcb;
 }
 
@@ -536,7 +600,7 @@ h6 {
 
 .address {
     margin: 100px 0;
-    background: url(../images/Map.png) center no-repeat;
+    background: url(../images/footer/map.png) center no-repeat;
     background-size: contain;
     min-height: 600px;
     padding-top: 50px;
@@ -544,8 +608,8 @@ h6 {
 }
 
 .address_circle {
-    width: 280px;
-    height: 280px;
+    width: 240px;
+    height: 240px;
     background-color: #394b50;
     border-radius: 50%;
     margin: 0 auto;
@@ -576,13 +640,13 @@ h6 {
 
 .after_circle {
     position: absolute;
-    top: 57%;
-    left: 49%;
+    top: 55%;
+    left: 49.5%;
 }
 
 .address_logo {
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 48%;
 }
 
@@ -629,8 +693,6 @@ h6 {
         padding: 10px 12px;
     }
 
-    /* INTRO */
-
     /* SERVICES */
     .services_img {
         margin-right: 20px;
@@ -647,7 +709,6 @@ h6 {
     }
 
     /* PRICE */
-    /* СДЕЛАТЬ СЛАЙДЕР */
     .price {
         padding: 80px 0;
     }
@@ -711,7 +772,7 @@ h6 {
 
     .nav_burger_icon {
         display: block;
-        padding: 15px;
+        padding: 10px 0;
     }
 
     .icon_line {
@@ -737,7 +798,7 @@ h6 {
         display: flex;
         transition: 0.3s;
         overflow: auto;
-        border-right: 1px solid #ffbb42;
+        border-right: 1px solid #fff;
     }
 
     .nav_burger.open {
@@ -827,6 +888,17 @@ h6 {
     }
 
     /* PRICE */
+    .price_slider_slider {
+        width: 80%;
+        min-width: 350px;
+    }
+
+    .price_slider_previous,
+    .price_slider_next {
+        width: 50px;
+        height: 50px;
+    }
+
     /* WORKS */
     .works_inner {
         display: block;
@@ -842,7 +914,7 @@ h6 {
     }
 
     .works_logo {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .works_arrow_1,
@@ -850,8 +922,6 @@ h6 {
     .works_arrow_2 {
         display: none;
     }
-
-    /* CLIENTS */
 
     /* FOOTER */
     .footer_nav {
@@ -924,6 +994,10 @@ h6 {
     }
 
     /* PRICE */
+    .price_slider_slider {
+        width: 100%;
+        min-width: 280px;
+    }
 
     /* WORKS */
     .works {
